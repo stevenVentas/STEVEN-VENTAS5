@@ -98,7 +98,7 @@
 <div id="modalEnviarWhatsApp" class="modal"><div class="modal-content"><span class="close" id="closeModalEnviar">X</span>
   <h3>Antes de continuar</h3>
   <p>Envía exactamente este mensaje:</p>
-  <div style="background:#001122;padding:10px;border-radius:8px;margin:10px 0;color:#cfeefc;"><code id="modalMensaje">Hola Steven, necesito el método de pago...</code></div>
+  <div style="background:#001122;padding:10px;border-radius:8px;margin:10px 0;color:#cfeefc;"><code id="modalMensaje">Hola Steven, necesito el método de pago para comprar el método CHAT GPT 5.1 Premium x1 año.</code></div>
   <button class="btn" id="continuarWhats">Continuar</button>
   <button class="btn" id="cancelarWhats">Cancelar</button>
 </div></div>
@@ -179,11 +179,11 @@ whatsappButtons.forEach(b=>{
     const type=b.dataset.type;
     const url=b.dataset.url;
     if(type==='comprar'){
-      modalMensaje.textContent='Hola Steven, necesito el método de pago para comprar el método de CHAT GPT 5.1 Premium x1 año.';
+      modalMensaje.textContent='Hola Steven, necesito el método de pago para comprar el método CHAT GPT 5.1 Premium x1 año.';
       pendingUrl=url;
       modalEnviar.style.display='flex';
     } else if(type==='wa'){
-      const ayuda='hola Steven, necesito ayuda...';
+      const ayuda='Hola Steven, necesito ayuda con el metodo se lo compre a: (escribe su nombre y manda captura, asi haiga sido yo)...';
       window.open(url+'?text='+encodeURIComponent(ayuda),'_blank');
     } else {
       window.open(url,'_blank');
